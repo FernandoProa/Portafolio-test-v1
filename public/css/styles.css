@@ -1,0 +1,31 @@
+.home-info{
+    min-height: 100vh;
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+.img-home{
+    background-color: #8e8e8e;
+    background-image: url(../img/wallpaper.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.img-tech{
+    height: 120px!important;
+    width: 80px !important;
+    object-fit: contain!important;
+}
+.img-experience{
+    height: 200px!important;
+    width: 150px!important;
+    object-fit: contain!important;
+}
