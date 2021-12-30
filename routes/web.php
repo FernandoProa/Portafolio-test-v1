@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\users\HomeController;
+use \App\Http\Controllers\users\ContactsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,6 +15,8 @@ use App\Http\Controllers\users\HomeController;
 */
 
 Route::get('/',[HomeController::class,'index'])->name('users.home');
+Route::post('/contact/submit',[ContactsController::class,'store'])->name('users.contact');
+
 
 Auth::routes();
 

@@ -66,9 +66,21 @@
             </div>
         </div>
     </section>
-    <section class="container my-5" id="contact">
+    <section class="container my-5" id="contact"
+    >
         <div class="row">
             <div class="col-12"><h1 class="fw-bolder text-center">Contacto: </h1></div>
+        </div>
+        <div class="row my-5 align-self-center text-center">
+            <div class="col-md-4">
+                <img class="img-socialmedia" src="img/linkedin.png" alt="linkedin">
+            </div>
+            <div class="col-md-4">
+                <img class="img-socialmedia" src="img/whatsapp.png" alt="whatsapp">
+            </div>
+            <div class="col-md-4">
+                <img class="img-socialmedia" src="img/gmail.png" alt="gmail">
+            </div>
         </div>
        <contact-form-component></contact-form-component>
     </section>
