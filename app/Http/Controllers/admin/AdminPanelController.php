@@ -12,6 +12,7 @@ class AdminPanelController extends Controller
         $this->middleware('can:Access panel')->only('index');
     }
     public function index(){
-        return view('admin.welcome');
+        $string = 'Hello from controller';
+        return view('admin.welcome', compact('string'));
     }
 }

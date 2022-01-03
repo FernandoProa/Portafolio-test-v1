@@ -1,7 +1,8 @@
 @extends('layouts.admin.admin')
 @section('title')
-    Welcome to this beautiful admin page, made with love
+    <h3 class="text-center font-weight-bold">Panel administrativo</h3>
+
 @stop
 @section('content')
-    Hello world, this is a welcome page
+    {{$string}}
 @stop
