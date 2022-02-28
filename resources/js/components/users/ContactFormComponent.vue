@@ -4,12 +4,12 @@
             <div class="row justify-content-md-center">
                 <div class="col-md-4">
                     <label for="name">Ingresa tu nombre</label>
-                    <input name="name" v-model="name" type="text" class="form-control" placeholder="Nombre">
+                    <input id="name" name="name" v-model="name" type="text" class="form-control" placeholder="Nombre">
                     <span class="text-danger" v-if="errors && errors.name" v-text="errors.name[0]"/>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 mt-3 mt-md-0">
                     <label for="phone">Número de teléfono</label>
-                    <input v-model="phone" type="tel" class="form-control" name="phone"
+                    <input id="phone" v-model="phone" type="tel" class="form-control" name="phone"
                            placeholder="Número de teléfono">
                     <span class="text-danger" v-if="errors && errors.phone" v-text="errors.phone[0]"/>
 
@@ -18,13 +18,13 @@
             <div class="row justify-content-md-center my-3">
                 <div class="col-md-8">
                     <label for="email">Correo electrónico</label>
-                    <input v-model="email" type="email" class="form-control" name="email" placeholder="Email">
+                    <input id="email" v-model="email" type="email" class="form-control" name="email" placeholder="Email">
                     <span class="text-danger" v-if="errors && errors.email" v-text="errors.email[0]"/>
 
                 </div>
                 <div class="col-md-8 my-3">
                     <label for="message">Ingresa un mensaje</label>
-                    <textarea v-model="message" name="message" class="form-control" placeholder="Mensaje"
+                    <textarea id="message" v-model="message" name="message" class="form-control" placeholder="Mensaje"
                               rows="7"></textarea>
                     <span class="text-danger" v-if="errors && errors.message" v-text="errors.message[0]"/>
 
