@@ -28,6 +28,7 @@ Vue.use(VueSweetalert2);
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('contact-form-component', require('./components/users/ContactFormComponent').default);
+Vue.component('personal-experience-component', require('./components/users/ProfessionalExperience').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

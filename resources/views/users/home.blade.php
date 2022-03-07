@@ -104,18 +104,7 @@
         <div class="row text-center">
             <div class="col-12"><h3 class="fw-bolder">Experiencia Profesional: </h3></div>
         </div>
-        <div class="row text-center">
-            <div class="col-md-4">
-                <img class="img-experience" src="img/olyteam.png" alt="logo olyteam">
-            </div>
-            <div class="col-md-4">
-                <img class="img-experience" src="img/crediplus.png" alt="logo crediplus">
-            </div>
-            <div class="col-md-4">
-                <img class="img-experience" src="img/dwit2.jpg" alt="logo DWIT MEXICO">
-            </div>
-
-        </div>
+        <personal-experience-component></personal-experience-component>
     </section>
     <section class="container my-5" id="contact">
         <div class="row">
@@ -138,3 +127,4 @@
 
 
 @stop
+
