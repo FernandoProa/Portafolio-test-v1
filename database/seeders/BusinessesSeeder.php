@@ -15,15 +15,21 @@ class BusinessesSeeder extends Seeder
     public $businesses = [
       [
           'OlyTeam',
-          'olyteam.png'
+          'olyteam.png',
+          'mayo - 2020',
+          'Presente'
       ],
         [
             'DWIT',
-            'dwit2.jpg'
+            'dwit2.jpg',
+            'enero - 2022',
+            'Presente'
         ],
         [
             'Impulsora MTP SAPI de SOFOM',
-            'crediplus.png'
+            'crediplus.png',
+            'enero - 2021',
+            'noviembre - 2021'
         ],
     ];
     public function run()
@@ -33,6 +39,8 @@ class BusinessesSeeder extends Seeder
             Business::create([
                'name_es' => $business[0],
                'url_logo' => 'img/'. $business[1],
+                'date_start' => $business[2],
+                'date_end' => $business[3],
 
             ]);
         }

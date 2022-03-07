@@ -20,8 +20,8 @@ class CreateTechnologiesTable extends Migration
             $table->longText('description_es')->nullable();
             $table->longText('description_en')->nullable();
             $table->longText('url_logo')->nullable();
-            $table->unsignedBigInteger('techcategory_id');
-            $table->foreign('techcategory_id')->references('id')->on('tech_categories');
+            $table->unsignedBigInteger('tech_category_id');
+            $table->foreign('tech_category_id')->references('id')->on('tech_categories');
 
             $table->timestamps();
         });

@@ -19,6 +19,8 @@ class CreateBusinessesTable extends Migration
             $table->longText('description_es')->nullable();
             $table->longText('description_en')->nullable();
             $table->text('url_logo');
+            $table->string('date_start');
+            $table->string('date_end');
 
 
             $table->timestamps();

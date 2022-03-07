@@ -93,7 +93,7 @@ class TechnologiesSeeder extends Seeder
             Technology::create([
                'name_es' => $technology[0],
                'name_en' => $technology[0],
-                'techcategory_id' => $id->id ?? 1,
+                'tech_category_id' => $id->id ?? 1,
                 'url_logo' => 'img/'.$technology[2]
 
             ]);

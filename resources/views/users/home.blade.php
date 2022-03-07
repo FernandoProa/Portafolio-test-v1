@@ -1,13 +1,13 @@
 @extends('layouts.app')
 @section('content')
-    <section id="start" class="home-info container-fluid">
+    <section id="inicio" class="home-info container-fluid">
         <div class="img-home"></div>
         <div class="container-fluid h-100">
             <div class="row text-center">
                 <div class="col-lg-7 align-self-center text-center text-white">
                     <h1 class="fw-bolder">¡Hola!</h1>
-                    <h1 class="fw-bolder">Soy *****</h1>
-                    <h3 class="fw-bold">Ingeniero en ****</h3>
+                    <h1 class="fw-bolder">Soy Fernando Hernandez Proa</h1>
+                    <h3 class="fw-bold">Ingeniero en Tecnologías de la información y comunicación</h3>
                 </div>
                 <div class="col-lg-4">
                     <img class="img-fluid" src="img/home.jpg"
@@ -17,7 +17,7 @@
             </div>
         </div>
     </section>
-    <section id="about" class="container mt-5">
+    <section id="sobre-mi" class="container pt-5">
         <div class="row">
             <div class="col-lg-7 mx-auto" style="text-align: justify;">
                 <h2 class="fw-bolder">Acerca de mi: </h2>
@@ -42,71 +42,33 @@
         </div>
 
     </section>
-    <section class="container mt-5">
+    <section id="tecnologias" class="container pt-5">
         <div class="row align-self-center align-content-center text-center">
             <h3 class="fw-bolder">Tecnologías usadas: </h3>
+            @foreach($techcategories as $category)
+                <div class="row py-3">
+                    <span class="text-black-50">{{$category->name_es }} </span>
 
-            <div class="row py-5">
-                <span class="text-black-50">Lenguajes de programación: </span>
+                    @foreach($category->technologies as $tech)
 
-                <div class="col-6 col-sm-6 col-md-3">
-                    <img class="img-tech" src="img/sql-language.png" alt="sql">
+                            <div class="col-6 col-sm-6 col-md-2 mx-auto">
+                                <img class="img-tech" src="{{$tech->url_logo ?? ''}}" alt="{{$tech->name_es}}">
+                            </div>
+                    @endforeach
+
+
                 </div>
-                <div class="col-6 col-sm-6 col-md-3">
-                    <img class="img-tech" src="img/php-logo2.png" alt="php">
-                </div>
-                <div class="col-6 col-sm-6 col-md-3">
-                    <img class="img-tech" src="img/js.png" alt="vue">
-                </div>
-                <div class="col-6 col-sm-6 col-md-3">
-                    <img class="img-tech" src="img/ts.png" alt="vue">
-                </div>
-            </div>
-            <div class="row">
-                <span class="text-black-50">Frameworks</span>
-                <div class="col-6 col-sm-6 col-md-3">
-                    <img class="img-tech" src="img/bootstrap-logo.png" alt="bootstrap">
-                </div>
-                <div class="col-6 col-sm-6 col-md-3">
-                    <img class="img-tech" src="img/Tailwind_CSS_Logo.svg.png" alt="tailwind">
-                </div>
-                <div class="col-6 col-sm-6 col-md-3">
-                    <img class="img-tech" src="img/laravel-logo.png" alt="laravel">
-                </div>
-                <div class="col-6 col-sm-6 col-md-3">
-                    <img class="img-tech" src="img/vuejs-logo.png" alt="vue">
-                </div>
-            </div>
-            <div class="row py-5">
-                <span class="text-black-50">Herramientas</span>
-                <div class="col-6 col-sm-6 col-md-3">
-                    <img class="img-tech" src="img/aws.png" alt="aws">
-                </div>
-                <div class="col-6 col-sm-6 col-md-3">
-                    <img class="img-tech" src="img/whm-cpanel.png" alt="cpanel&whm">
-                </div>
-                <div class="col-6 col-sm-6 col-md-3">
-                    <img class="img-tech" src="img/linux.png" alt="linux">
-                </div>
-                <div class="col-6 col-sm-6 col-md-3">
-                    <img class="img-tech" src="img/phpstorm.png" alt="phpstorm">
-                </div>
-                <div class="col-6 col-sm-6 col-md-3">
-                    <img class="img-tech" src="img/vscode.png" alt="vscode">
-                </div>
-                <div class="col-6 col-sm-6 col-md-3">
-                    <img class="img-tech" src="img/git.png" alt="git">
-                </div>
-            </div>
-        </div>
+            @endforeach
+
+
     </section>
-    <section class="container my-5" id="experience">
+    <section class="container py-5" id="experiencia">
         <div class="row text-center">
             <div class="col-12"><h3 class="fw-bolder">Experiencia Profesional: </h3></div>
         </div>
         <personal-experience-component></personal-experience-component>
     </section>
-    <section class="container my-5" id="contact">
+    <section class="container py-5" id="contacto">
         <div class="row">
             <div class="col-12"><h3 class="fw-bolder text-center">Puedes contactarme por este medio: </h3></div>
         </div>
