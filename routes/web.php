@@ -17,9 +17,7 @@ use \App\Http\Controllers\users\ContactsController;
 Route::get('/',[HomeController::class,'index'])->name('users.home');
 Route::post('/contact/submit',[ContactsController::class,'store'])->name('users.contact');
 
-//Route::get('/admin', function (){
-//   return view('admin.welcome');
-//});
+
 Auth::routes();
 
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
