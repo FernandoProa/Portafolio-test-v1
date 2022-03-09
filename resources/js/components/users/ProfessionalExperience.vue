@@ -27,9 +27,9 @@
                                 </div>
                                 <div class="col-12 pt-3">
                                     <p
-                                        class="text-black-50" style="text-align:left" v-if="selected.description_es">{{selected.description_es}}
+                                        v-if="selected.description_es">{{selected.description_es}}
                                     </p>
-                                    <p class="text-black-50" style="text-align:left" v-else>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum distinctio, in! Accusantium expedita iste itaque mollitia odio, sunt. Deleniti distinctio eveniet hic magnam modi non porro recusandae rem sequi vel?</p>
+                                    <p  v-else>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum distinctio, in! Accusantium expedita iste itaque mollitia odio, sunt. Deleniti distinctio eveniet hic magnam modi non porro recusandae rem sequi vel?</p>
                                 </div>
                             </div>
                         </div>

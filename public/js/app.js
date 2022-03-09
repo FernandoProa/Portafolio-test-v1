@@ -33049,31 +33049,17 @@ var render = function () {
                     _vm._v(" "),
                     _c("div", { staticClass: "col-12 pt-3" }, [
                       _vm.selected.description_es
-                        ? _c(
-                            "p",
-                            {
-                              staticClass: "text-black-50",
-                              staticStyle: { "text-align": "left" },
-                            },
-                            [
-                              _vm._v(
-                                _vm._s(_vm.selected.description_es) +
-                                  "\n                                "
-                              ),
-                            ]
-                          )
-                        : _c(
-                            "p",
-                            {
-                              staticClass: "text-black-50",
-                              staticStyle: { "text-align": "left" },
-                            },
-                            [
-                              _vm._v(
-                                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum distinctio, in! Accusantium expedita iste itaque mollitia odio, sunt. Deleniti distinctio eveniet hic magnam modi non porro recusandae rem sequi vel?"
-                              ),
-                            ]
-                          ),
+                        ? _c("p", [
+                            _vm._v(
+                              _vm._s(_vm.selected.description_es) +
+                                "\n                                "
+                            ),
+                          ])
+                        : _c("p", [
+                            _vm._v(
+                              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum distinctio, in! Accusantium expedita iste itaque mollitia odio, sunt. Deleniti distinctio eveniet hic magnam modi non porro recusandae rem sequi vel?"
+                            ),
+                          ]),
                     ]),
                   ]),
                 ]),

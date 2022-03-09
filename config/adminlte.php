@@ -188,7 +188,7 @@ return [
     */
 
     'use_route_url' => false,
-    'dashboard_url' => 'home',
+    'dashboard_url' => '/admin',
     'logout_url' => 'logout',
     'login_url' => 'login',
     'register_url' => 'register',
@@ -248,11 +248,11 @@ return [
 //        ],
         [
             'text'        => 'Home',
-            'url'         => 'admin/pages',
+            'url'         => 'admin',
             'icon'        => 'fas fa-fw fa-home mr-1',
 //            'label'       => 4,
             'label_color' => 'success',
-            'active' => ['/admin/']
+            'active' => ['/admin']
         ],
         [
             'text' => 'Experiencia',
