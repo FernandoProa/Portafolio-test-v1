@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light rounded">
+<nav id="navbar-user" class="navbar navbar-expand-lg navbar-light bg-light rounded d-none">
     <div class="container">
         <a class="navbar-brand" href="/">Fernando Proa</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
